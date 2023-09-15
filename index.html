@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple Discount Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Discount Calculator</h1>
+        <label for="productDropdown">Choose a product category:</label>
+        <select id="productDropdown">
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <label for="price">Enter Product Price:</label>
+        <input type="text" id="price">
+        
+        <button onclick="getPriceWithDiscount()">Calculate</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
